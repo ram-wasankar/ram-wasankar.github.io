@@ -19,9 +19,16 @@
 @media print{.research-links{display:none}}
 
 @media(max-width:800px){.layout{grid-template-columns:1fr;gap:35px;padding:30px 25px}}
-.profile-photo-placeholder{width:140px;height:160px;margin:24px 0 0;border:1px solid var(--border);background:#fafafa;display:flex;align-items:center;justify-content:center;color:#777;font-size:13px}
 .profile-photo-placeholder img{display:block;width:100%;height:100%;object-fit:cover}
 @media print{.profile-photo-placeholder{display:none}}
+
+.right-column{align-self:start;position:sticky;top:45px;min-width:0;display:flex;flex-direction:column;gap:22px}
+.right-column .research-links{position:static;width:100%}
+.right-column .profile-photo-placeholder{width:100%;height:210px;margin:0;border:1px solid var(--border);background:#fafafa;display:flex;align-items:center;justify-content:center;color:#777;font-size:13px}
+.profile-photo-placeholder img{display:block;width:100%;height:100%;object-fit:cover}
+@media(min-width:801px) and (max-width:1100px){.right-column{grid-column:2;position:static;max-width:360px}.right-column .profile-photo-placeholder{width:190px}}
+@media(max-width:800px){.right-column{position:static}.right-column .profile-photo-placeholder{width:190px}}
+@media print{.right-column{display:none}}
 </style>
 </head>
 <body>
@@ -47,8 +54,6 @@
 <p class="affiliation">Master’s student in Computer Science at UC Davis</p>
 <p>I work on software systems and machine learning, with experience in document retrieval, LLM evaluation, enterprise data management, and compiler-based program analysis.</p>
 <p>Previously, I worked as a Software Engineer at Dentsu Global Services and a Software Engineer Intern at Plural Technology. I completed my bachelor’s degree in Computer Engineering at Savitribai Phule Pune University in 2026.</p>
-<!-- Replace this placeholder with an img element when your photo is ready. -->
-<div class="profile-photo-placeholder" role="img" aria-label="Space reserved for a profile photo"><span>Photo</span></div>
 <div class="actions"><a class="button primary" href="research.html">Current research & project</a><a class="button" href="#projects">View projects</a><a class="button" href="mailto:ramwasankar04@gmail.com">Email me</a><button class="button" type="button" disabled title="LinkedIn URL has not been added">LinkedIn</button><a class="button" href="https://github.com/ram-wasankar">GitHub</a></div>
 </section>
 <section class="content" id="experience" aria-labelledby="experience-title">
@@ -143,11 +148,15 @@
 </section>
 <footer>© 2026 Ram Wasankar</footer>
 </main>
+<div class="right-column">
+<!-- Replace this placeholder with your profile photo when ready. -->
+<div class="profile-photo-placeholder" role="img" aria-label="Space reserved for a profile photo"><span>Photo</span></div>
 <aside class="research-links" aria-labelledby="research-links-title">
 <h2 id="research-links-title">Research links</h2>
 <!-- Add research links inside this space when ready. -->
 <div class="links-space"></div>
 </aside>
+</div>
 </div>
 </body>
 </html>

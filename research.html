@@ -32,7 +32,23 @@
      overview, methods, progress, and links. Add h3, p, and ul elements as needed. -->
 <section class="content" id="research" aria-labelledby="research-title">
 <h2 id="research-title">Current research</h2>
-<p>Details coming soon.</p>
+<article class="entry">
+<h3>Cost-Optimal Model Selection and Adaptive Agent Coordination</h3>
+<p class="subtitle">Status: Research proposal · Evaluation planned</p>
+<p>My proposed research asks a practical question: what is the lowest-cost combination of models and agents that can reliably complete a task? I plan to study an adaptive orchestration layer that combines self-hosted open-source models with external model APIs, choosing where to spend compute, when to escalate, and how much context each agent actually needs.</p>
+<p>The objective is to approach the best model choice for each task under explicit quality, latency, and budget constraints. The system would learn from measured outcomes rather than assume that the largest model is always the strongest choice.</p>
+<ul>
+<li><strong>Learning which model to use:</strong> Investigate contextual bandit routing using task embeddings, difficulty estimates, prior outcomes, and inference costs. Compare the learned policy against fixed routing and the best model chosen in hindsight.</li>
+<li><strong>Small-model-first execution:</strong> Explore cascades that start with inexpensive open-source models and escalate only when task checks or calibrated uncertainty indicate that more capable reasoning is needed. Study when verification costs more than the savings it enables.</li>
+<li><strong>Budget-aware agent planning:</strong> Represent a task as a graph of dependent subtasks and allocate models, token budgets, and parallel work to each stage. Account for retries, verification, and communication overhead in the total cost of completing the task.</li>
+<li><strong>Selective context and reusable memory:</strong> Test retrieval-based handoffs, compressed working memory, and semantic caching so agents receive relevant evidence without replaying the entire history. Measure whether compression or cache reuse loses details needed for correct answers.</li>
+<li><strong>Open-source inference experiments:</strong> Plan a reproducible testbed for comparing quantized models, batching, and prefix caching. Include GPU time, utilization, and hosting overhead so self-hosted inference is evaluated on its actual operating cost.</li>
+<li><strong>Adaptive stopping and recovery:</strong> Investigate when another agent or model call is worth its expected improvement, when the system should stop, and how it should recover from an incorrect intermediate result without restarting the full workflow.</li>
+</ul>
+<h4>Planned evaluation</h4>
+<p>Evaluate coding, retrieval, and multi-step reasoning workloads against a single strong model, a single low-cost model, fixed cascades, and static multi-agent workflows. Report task success, cost per successful task, token usage, tail latency, and routing regret relative to the best model in hindsight. Ablation studies would isolate the effects of routing, memory compression, caching, and verification.</p>
+<p>The target outcome is a reproducible quality–cost frontier showing where adaptive orchestration saves resources and where the additional coordination fails to pay off. Results will be added as experiments are completed.</p>
+</article>
 </section>
 <!-- EDIT ONGOING PROJECT BELOW: Replace the paragraph with your project title,
      description, technical approach, current progress, and repository or demo links. -->

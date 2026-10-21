@@ -6,34 +6,110 @@
 <meta name="description" content="Current research and ongoing projects by Ram Wasankar, MS Computer Science at UC Davis.">
 <title>Current Research & Project | Ram Wasankar</title>
 <style>
-:root{color-scheme:light;--ink:#202020;--secondary:#555;--blue:#174f91;--border:#d8d8d8}*{box-sizing:border-box}html{scroll-padding-top:25px}body{margin:0;background:#fff;color:var(--ink);font:15px/1.7 Arial,Helvetica,sans-serif}a{color:var(--blue);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--blue);outline-offset:5px}.skip{position:absolute;top:-100px;background:white;padding:10px}.skip:focus{top:10px}.layout{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:230px minmax(0,1fr);gap:75px;padding:65px 32px 30px}.sidebar{align-self:start;position:sticky;top:45px}.sidebar-name{display:block;font-size:21px;line-height:1.3;font-weight:bold;color:var(--ink);text-decoration:none;margin-bottom:12px}.sidebar p{font-size:13px;line-height:1.7;color:var(--secondary);margin:0 0 22px}.sidebar nav{display:flex;flex-direction:column;border-top:1px solid var(--border);padding-top:16px;gap:6px}.sidebar nav a{font-size:14px;padding:3px 0;text-decoration:none;color:#333}.sidebar nav a:hover{color:var(--blue);text-decoration:underline}.sidebar .email{display:block;overflow-wrap:anywhere;font-size:12px;margin-top:23px}main{min-width:0}h1{font-size:36px;line-height:1.2;letter-spacing:-1px;margin:0 0 12px}h2{font-size:21px;line-height:1.35;margin:0 0 23px;padding-bottom:10px;border-bottom:1px solid var(--border)}h3{font-size:17px;line-height:1.5;margin:0 0 4px}h4{font-size:15px;margin:0 0 7px}.intro{padding-bottom:38px}.intro .affiliation{font-size:17px;margin:0 0 20px;color:#333}.intro p{margin:0 0 14px;max-width:720px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.button{display:inline-block;background:white;border:1px solid #999;padding:7px 13px;font:14px/1.5 Arial,Helvetica,sans-serif;color:#222;text-decoration:none;cursor:pointer;border-radius:2px}.button:hover{background:#f4f4f4;text-decoration:none}.button:disabled{color:#707070;border-color:#ccc;cursor:default;background:#fafafa}.button.primary{border-color:var(--blue);color:var(--blue)}section.content{padding:23px 0 24px;scroll-margin-top:20px}.entry{margin-bottom:30px}.entry:last-child{margin-bottom:0}.entry-heading{display:flex;justify-content:space-between;align-items:baseline;gap:20px}.date{font-size:13px;white-space:nowrap;color:var(--secondary)}.subtitle{font-size:14px;color:#444;margin:2px 0 11px}.entry p{margin:8px 0}.entry ul{margin:9px 0 0;padding-left:20px}.entry li{padding-left:3px;margin:7px 0}.project-type{font-size:12px;color:#626262;margin:0 0 7px}.skills{margin:0;display:grid;grid-template-columns:155px 1fr;gap:13px 15px}.skills dt{font-weight:bold}.skills dd{margin:0}.awards{list-style:none;margin:0;padding:0}.awards li{display:flex;justify-content:space-between;gap:20px;padding:9px 0;border-bottom:1px solid #eee}.awards li:last-child{border:0}.awards time{font-size:13px;color:var(--secondary)}.contact p{margin:5px 0}footer{font-size:12px;color:#666;border-top:1px solid var(--border);padding:20px 0;margin-top:25px}dialog{border:1px solid #aaa;border-radius:3px;padding:28px;max-width:490px;width:calc(100% - 40px);font:15px/1.7 Arial,Helvetica,sans-serif;color:var(--ink)}dialog::backdrop{background:rgba(0,0,0,.25)}dialog h2{padding:0;border:0;margin:0 0 16px}dialog p{color:#555}dialog .button{margin-top:12px}
-@media(min-width:1400px){.layout{padding-top:80px}}@media(max-width:800px){.layout{grid-template-columns:1fr;gap:35px;padding:30px 25px}.sidebar{position:static}.sidebar-name{font-size:18px;margin:0 0 5px}.sidebar p{margin:0 0 15px}.sidebar nav{flex-direction:row;flex-wrap:wrap;gap:6px 20px;padding-top:12px}.sidebar .email{display:none}h1{font-size:32px}.intro{padding-bottom:15px}.entry-heading{display:block}.date{display:block;margin:2px 0 5px}.skills{grid-template-columns:1fr;gap:3px}.skills dd{margin-bottom:13px}section.content{padding-top:22px}.entry li{margin:9px 0}}@media print{.layout{display:block;padding:0}.sidebar,.actions,dialog,footer,.skip{display:none}body{font-size:11px}h1{font-size:28px}h2{font-size:17px}.intro{padding-bottom:8px}section.content{padding:12px 0}.entry{break-inside:avoid;margin-bottom:18px}a{color:inherit}}
 
-/* Three-column desktop layout with space for future research links. */
-.layout{max-width:1340px;grid-template-columns:220px minmax(0,1fr) 190px;gap:50px;padding-left:40px;padding-right:40px}
-.research-links{align-self:start;position:sticky;top:45px;border:1px solid var(--border);padding:18px;min-height:190px}
-.research-links h2{font-size:16px;margin:0;padding:0;border:0}
+:root{color-scheme:light;--ink:#24272b;--secondary:#5c626a;--blue:#174f79;--border:#dce1e5}
+*{box-sizing:border-box}
+html{scroll-padding-top:28px}
+body{margin:0;background:#fff;color:var(--ink);font:15px/1.75 Arial,Helvetica,sans-serif}
+a{color:var(--blue);text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:2px solid var(--blue);outline-offset:5px}
+.skip{position:absolute;top:-100px;background:#fff;padding:10px;z-index:5}
+.skip:focus{top:10px}
+.layout{max-width:1340px;margin:0 auto;display:grid;grid-template-columns:220px minmax(0,1fr) 190px;gap:50px;padding:68px 40px 30px}
+.sidebar{align-self:start;position:sticky;top:36px}
+.sidebar-name{display:block;font-family:"Times New Roman",Times,serif;font-size:24px;line-height:1.3;font-weight:400;color:var(--ink);text-decoration:none;margin-bottom:12px}
+.sidebar p{font-size:13px;line-height:1.7;color:var(--secondary);margin:0 0 22px}
+.sidebar nav{display:flex;flex-direction:column;border-top:1px solid var(--border);padding-top:15px;gap:3px}
+.sidebar nav a{font-size:14px;padding:5px 0;text-decoration:none;color:#454b52}
+.sidebar nav a:hover{color:var(--blue);text-decoration:underline}
+.sidebar .email{display:block;overflow-wrap:anywhere;font-size:12px;margin-top:23px}
+main{min-width:0}
+h1{font-size:34px;line-height:1.2;letter-spacing:-.6px;margin:0 0 14px}
+#name{font-family:"Times New Roman",Times,serif;font-size:42px;letter-spacing:0;font-weight:400}
+h2{font-size:20px;font-weight:600;line-height:1.4;margin:0 0 26px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+h3{font-size:17px;line-height:1.5;margin:0 0 5px}
+h4{font-size:15px;margin:24px 0 9px}
+.intro{padding-bottom:30px}
+.intro .affiliation{font-size:16px;line-height:1.6;margin:0 0 22px;color:#454b52}
+.intro p{margin:0 0 15px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:23px}
+.actions.social{margin-top:12px}
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:41px;background:#fff;border:1px solid #c8cfd5;padding:8px 14px;font:14px/1.5 Arial,Helvetica,sans-serif;color:#303840;text-decoration:none;border-radius:3px}
+.button:hover{background:#f5f7f8;border-color:#8b9aa7;text-decoration:none}
+.button.primary{background:var(--blue);border-color:var(--blue);color:#fff}
+.button.primary:hover{background:#123f61}
+section.content{padding:28px 0 22px;scroll-margin-top:24px}
+.entry{margin:0 0 28px}
+.entry:last-child{margin-bottom:0}
+.entry+.entry{border-top:1px solid #edf0f2;padding-top:27px}
+.entry-heading{display:flex;justify-content:space-between;align-items:baseline;gap:18px;flex-wrap:wrap}
+.date{font-size:12px;color:var(--secondary);white-space:nowrap;font-variant-numeric:tabular-nums}
+.subtitle{font-size:14px;color:var(--secondary);margin:3px 0 12px}
+.entry p{margin:9px 0}
+.entry ul{margin:12px 0 0;padding-left:19px}
+.entry li{padding-left:3px;margin:8px 0}
+.project-type{font-size:12px;color:var(--secondary);margin:0 0 7px}
+.project-details{display:inline-block;font-size:14px;margin-top:16px}
+.skills{margin:0;display:grid;grid-template-columns:145px minmax(0,1fr);gap:16px 18px}
+.skills dt{font-size:14px;font-weight:600}
+.skills dd{margin:0;overflow-wrap:anywhere}
+.awards{list-style:none;margin:0;padding:0}
+.awards li{display:flex;justify-content:space-between;gap:20px;padding:11px 0;border-bottom:1px solid #edf0f2}
+.awards li:last-child{border:0}
+.awards time{font-size:13px;color:var(--secondary)}
+.contact p{margin:7px 0}
+footer{font-size:12px;color:var(--secondary);border-top:1px solid var(--border);padding:22px 0;margin-top:32px}
+.right-column{align-self:start;position:sticky;top:36px;min-width:0;display:flex;flex-direction:column;gap:24px}
+.profile-photo-placeholder{width:190px;height:210px;margin:0;overflow:hidden;border:1px solid var(--border);background:#fafafa}
+.profile-photo-placeholder img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 50%;transform:translateX(-5px) scale(1.65)}
+.research-links{border:1px solid var(--border);padding:18px;min-height:190px;width:100%}
+.research-links h2{font-size:15px;margin:0;padding:0;border:0}
 .research-links .links-space{min-height:110px}
-@media(min-width:801px) and (max-width:1100px){.layout{grid-template-columns:180px minmax(0,1fr);gap:35px}.research-links{grid-column:2;position:static;max-width:360px}}
-@media(max-width:800px){.research-links{position:static;max-width:none}}
-@media print{.research-links{display:none}}
-
-@media(max-width:800px){.layout{grid-template-columns:1fr;gap:35px;padding:30px 25px}}
-
-.right-column{align-self:start;position:sticky;top:45px;min-width:0;display:flex;flex-direction:column;gap:22px}
-.right-column .research-links{position:static;width:100%}
-.right-column .profile-photo-placeholder{width:100%;height:210px;margin:0;border:1px solid var(--border);background:#fafafa;display:flex;align-items:center;justify-content:center;color:#777;font-size:13px}
-.profile-photo-placeholder img{display:block;width:100%;height:100%;object-fit:cover}
-@media(min-width:801px) and (max-width:1100px){.right-column{grid-column:2;position:static;max-width:360px}.right-column .profile-photo-placeholder{width:190px}}
-@media(max-width:800px){.right-column{position:static}.right-column .profile-photo-placeholder{width:190px}}
-@media print{.right-column{display:none}}
-.right-column .profile-photo-placeholder{overflow:hidden}
-.right-column .profile-photo-placeholder img{width:100%;height:100%;object-fit:cover;object-position:50% 50%;transform:translateX(-5px) scale(1.65);flex-shrink:0}
-
-/* Name typography */
-.sidebar-name{font-family:"Times New Roman",Times,serif;font-size:24px;font-weight:400;letter-spacing:0}
-#name{font-family:"Times New Roman",Times,serif;font-weight:400;font-size:42px;letter-spacing:0}
-@media(max-width:800px){.sidebar-name{font-size:22px}#name{font-size:36px}}
+@media(min-width:1400px){.layout{padding-top:80px}}
+@media(min-width:801px) and (max-width:1100px){
+.layout{grid-template-columns:minmax(0,1fr) 190px;gap:32px;padding:38px 32px}
+.sidebar{grid-column:1/-1;position:static}
+.sidebar p{margin-bottom:14px}
+.sidebar nav{flex-direction:row;flex-wrap:wrap;gap:5px 22px}
+.sidebar .email{display:none}
+.right-column{grid-column:2;grid-row:2}
+main{grid-column:1;grid-row:2}
+}
+@media(max-width:800px){
+.layout{grid-template-columns:minmax(0,1fr);gap:26px;padding:27px 22px}
+.sidebar{position:static;grid-row:1}
+.sidebar-name{font-size:22px;margin-bottom:5px}
+.sidebar p{margin-bottom:14px}
+.sidebar nav{flex-direction:row;flex-wrap:wrap;gap:2px 18px;padding-top:10px}
+.sidebar nav a{font-size:13px;min-height:34px;display:flex;align-items:center}
+.sidebar .email{display:none}
+.right-column{display:contents}
+.profile-photo-placeholder{grid-column:1;grid-row:2;width:152px;height:168px}
+main{grid-row:3}
+.research-links{grid-row:4;max-width:360px;min-height:160px}
+#name{font-size:36px}
+h1{font-size:29px}
+.intro{padding-bottom:12px}
+.actions{gap:8px}
+.button{min-height:44px;padding:9px 13px}
+section.content{padding-top:25px}
+.entry-heading{display:block}
+.date{display:block;margin:3px 0 6px}
+.skills{grid-template-columns:1fr;gap:4px}
+.skills dd{margin-bottom:12px}
+}
+@media print{
+.layout{display:block;padding:0}
+.sidebar,.right-column,.actions,footer,.skip{display:none}
+body{font-size:11px}
+#name{font-size:28px}
+h2{font-size:17px}
+.intro{padding-bottom:8px}
+section.content{padding:12px 0}
+.entry{break-inside:avoid;margin-bottom:18px}
+a{color:inherit}
+}
 </style>
 </head>
 <body>
@@ -53,6 +129,7 @@
 <section class="intro" aria-labelledby="page-title">
 <h1 id="page-title">Current research & project</h1>
 <p class="affiliation">Research and work in progress</p>
+<div class="actions social"><a class="button" href="https://www.linkedin.com/in/ramwasankar/">LinkedIn</a><a class="button" href="https://github.com/ram-wasankar">GitHub</a><a class="button" href="mailto:ramwasankar04@gmail.com">Email me</a></div>
 </section>
 <!-- EDIT CURRENT RESEARCH BELOW: Replace the paragraph with your research title,
      overview, methods, progress, and links. Add h3, p, and ul elements as needed. -->

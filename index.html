@@ -27,7 +27,7 @@ a:focus-visible{outline:2px solid var(--blue);outline-offset:5px}
 main{min-width:0}
 h1{font-size:34px;line-height:1.2;letter-spacing:-.6px;margin:0 0 14px}
 #name{font-family:"Times New Roman",Times,serif;font-size:42px;letter-spacing:0;font-weight:400}
-h2{font-size:20px;font-weight:600;line-height:1.4;margin:0 0 26px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+h2{font-size:20px;font-weight:600;line-height:1.4;margin:0 0 23px;padding:0;border:0}
 h3{font-size:17px;line-height:1.5;margin:0 0 5px}
 h4{font-size:15px;margin:24px 0 9px}
 .intro{padding-bottom:30px}
@@ -35,14 +35,14 @@ h4{font-size:15px;margin:24px 0 9px}
 .intro p{margin:0 0 15px}
 .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:23px}
 .actions.social{margin-top:12px}
-.button{display:inline-flex;align-items:center;justify-content:center;min-height:41px;background:#fff;border:1px solid #c8cfd5;padding:8px 14px;font:14px/1.5 Arial,Helvetica,sans-serif;color:#303840;text-decoration:none;border-radius:3px}
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:38px;background:#fff;border:1px solid #c8cfd5;padding:6px 12px;font:14px/1.5 Arial,Helvetica,sans-serif;color:#303840;text-decoration:none;border-radius:2px}
 .button:hover{background:#f5f7f8;border-color:#8b9aa7;text-decoration:none}
-.button.primary{background:var(--blue);border-color:var(--blue);color:#fff}
-.button.primary:hover{background:#123f61}
+.button.primary{background:#fff;border-color:#aeb9c2;color:var(--blue)}
+.button.primary:hover{background:#f7f8f9}
 section.content{padding:28px 0 22px;scroll-margin-top:24px}
 .entry{margin:0 0 28px}
 .entry:last-child{margin-bottom:0}
-.entry+.entry{border-top:1px solid #edf0f2;padding-top:27px}
+.entry+.entry{padding-top:8px}
 .entry-heading{display:flex;justify-content:space-between;align-items:baseline;gap:18px;flex-wrap:wrap}
 .date{font-size:12px;color:var(--secondary);white-space:nowrap;font-variant-numeric:tabular-nums}
 .subtitle{font-size:14px;color:var(--secondary);margin:3px 0 12px}
@@ -55,7 +55,7 @@ section.content{padding:28px 0 22px;scroll-margin-top:24px}
 .skills dt{font-size:14px;font-weight:600}
 .skills dd{margin:0;overflow-wrap:anywhere}
 .awards{list-style:none;margin:0;padding:0}
-.awards li{display:flex;justify-content:space-between;gap:20px;padding:11px 0;border-bottom:1px solid #edf0f2}
+.awards li{display:flex;justify-content:space-between;gap:20px;padding:7px 0}
 .awards li:last-child{border:0}
 .awards time{font-size:13px;color:var(--secondary)}
 .contact p{margin:7px 0}
@@ -133,9 +133,9 @@ a{color:inherit}
 <section class="intro" id="about" aria-labelledby="name">
 <h1 id="name">Ram Wasankar</h1>
 <p class="affiliation">Master’s student in Computer Science at UC Davis</p>
-<p>I work on software systems and machine learning, with experience in document retrieval, LLM evaluation, enterprise data management, and compiler-based program analysis.</p>
-<p>Previously, I worked as a Software Engineer at Dentsu Global Services and a Software Engineer Intern at Plural Technology. I completed my bachelor’s degree in Computer Engineering at Savitribai Phule Pune University in 2026.</p>
-<div class="actions"><a class="button primary" href="research.html">Current research & project</a><a class="button" href="#projects">View projects</a></div>
+<p>I’m interested in how language models fit into larger software systems: which model to use, what context to pass along, and how to tell whether the result is reliable. I’m currently working on model routing and agent coordination.</p>
+<p>Before UC Davis, I worked at Dentsu Global Services and Plural Technology on enterprise data and document retrieval. I studied Computer Engineering at Savitribai Phule Pune University.</p>
+<p><a href="research.html">Current research & project</a></p>
 <div class="actions social" aria-label="Contact and profiles"><a class="button" href="mailto:ramwasankar04@gmail.com">Email me</a><a class="button" href="https://www.linkedin.com/in/ramwasankar/">LinkedIn</a><a class="button" href="https://github.com/ram-wasankar">GitHub</a></div>
 </section>
 <section class="content" id="experience" aria-labelledby="experience-title">
@@ -171,7 +171,7 @@ a{color:inherit}
 <li><strong>Context-efficient handoffs:</strong> Pass relevant information between agents rather than repeatedly sending the entire conversation history.</li>
 <li><strong>Evaluation goals:</strong> Compare the orchestration approach with single-model workflows on task quality, token consumption, latency, and cost.</li>
 </ul>
-<a class="project-details" href="research.html#project">Project overview & research →</a>
+<a class="project-details" href="research.html#project">More about this project</a>
 </article>
 <article class="entry">
 <p class="project-type">Multimodal systems · Full-stack development</p>
